@@ -33,12 +33,16 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-//var port = process.env.PORT || 5000;
-
-//app.set('port',());
+// var port = process.env.PORT || 5000;
+//
+// app.set('port',(process.env.PORT || 5000));
+//
 // app.listen(port,"0.0.0.0",function () {
 //     console.log("Listening on Port 5000");
 // });
+
+
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
