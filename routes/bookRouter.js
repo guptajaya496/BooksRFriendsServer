@@ -32,7 +32,7 @@ bookRouter.route('/')
                     'Access-Control-Allow-Headers': 'Content-Type'
                 });
 
-                res.json(book);
+                    res.json(book);
             });
         }
         else{
