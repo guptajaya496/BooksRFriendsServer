@@ -15,18 +15,6 @@ var userSchema = new Schema({
             type:String,
             required:true
         },
-        dateOfBirth : {
-            type:Date,
-            required:true
-        },
-        address:{
-            type:String,
-            required:true
-        },
-        occupation:{
-            type:String,
-            required:true
-        },
         emailId:{
             type:String,
             required:true

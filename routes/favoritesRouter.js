@@ -29,9 +29,6 @@ favoritesRouter.route('/')
     })
     .post(Verify.verifyOrdinaryUser , function (req,res,next) {
 
-        //console.log(req.decoded.user._id);
-        //console.log(req.body);
-
         var userId = req.decoded.user._id;
         var bookId = req.body.bookId;
 
@@ -109,7 +106,7 @@ favoritesRouter.route('/')
 
                 if(favorites.books.indexOf(bookId) > -1){
 
-                    console.log("i am in");
+                    console.log("book in favorite found in the list.");
 
                     favorites.books.pop(bookId);
 
@@ -118,7 +115,6 @@ favoritesRouter.route('/')
                         if(err) throw err;
 
                         console.log("Book removed from the Favorites");
-
                     })
                 }
 

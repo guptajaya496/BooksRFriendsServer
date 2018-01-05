@@ -26,9 +26,6 @@ router.route('/register')
                 password: req.body.password,
                 firstName : req.body.firstName,
                 lastName : req.body.lastName,
-                dateOfBirth:req.body.dateOfBirth,
-                address:req.body.address,
-                occupation:req.body.occupation,
                 emailId:req.body.emailId,
                 confirmPassword:req.body.confirmPassword
             }),
@@ -43,18 +40,6 @@ router.route('/register')
 
                 if(req.body.lastName){
                     user.lastName = req.body.lastName;
-                }
-
-                if(req.body.dateOfBirth){
-                    user.dateOfBirth = req.body.dateOfBirth;
-                }
-
-                if(req.body.address){
-                    user.address = req.body.address;
-                }
-
-                if(req.body.occupation){
-                    user.occupation = req.body.occupation;
                 }
 
                 if(req.body.emailId){
