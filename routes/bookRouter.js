@@ -11,7 +11,7 @@ bookRouter.use(bodyParser.json());
 bookRouter.route('/')
     .get(function (req,res,next) {
 
-        Books.find({"featured":"featured"},function (err,book) {
+        Books.find({},function (err,book) {
 
             if (err) throw err;
 
