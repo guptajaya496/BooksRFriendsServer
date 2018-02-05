@@ -104,7 +104,8 @@ router.route('/logout')
     .get(function(req, res) {
         req.logout();
         res.status(200).json({
-            status: 'Bye!'
+            status: 200,
+            message : "Bye!"
         });
     });
 
